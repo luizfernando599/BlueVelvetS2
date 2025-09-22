@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f1f, #1a1a2e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px;
+}
+
+.ads {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.ad-box {
+  width: 160px;
+  height: 600px;
+  background: #2a2a3d;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.links {
+  flex: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #fff;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #f0f0f0;
+}
+
+.links a {
+  display: block;
+  margin: 12px auto;
+  padding: 15px;
+  width: 80%;
+  max-width: 400px;
+  background: #4a4a6a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  background: #6a6ab8;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ads {
+    display: none; /* Esconde anúncios no mobile */
+  }
+}
